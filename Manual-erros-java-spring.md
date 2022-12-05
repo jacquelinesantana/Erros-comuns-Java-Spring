@@ -95,5 +95,5 @@ Note que o inicio do erro já esta falando "Unsatisfied dependency" aqui já tem
 
 ​	d. salve o arquivo e aguarde a finalização do download das dependências;
 
-​	e. caso necessário force o download das dependências utilizando o passo a passo: [clique aqui]();
+​	e. caso necessário force o download das dependências utilizando o passo a passo: [clique aqui](https://github.com/jacquelinesantana/Erros-comuns-Java-Spring/blob/main/Manual-erros-java-spring.md#n%C3%A3o-carregou-todos-os-diret%C3%B3rios-do-springboot);
 
