@@ -29,7 +29,7 @@ Soluções cabíveis:
    ![Trocando nome de um projeto já existente no seu workspace](https://i.imgur.com/44NaD97.png)
    
 
-## Não carregou todos os diretórios do Springboot
+## Não carregou todos os diretórios do Spring boot
 
 Na correria do dia a dia, podemos esquecer que as vezes a tecnologia também precisa de seu tempo respeitado, se você sentir que falta algo em seu novo projeto, lembre-se de aguardar ele carregar todas a dependências instaladas. você pode acompanhar as instalações pela barra de status da sua IDE, veja que na imagem a seguir o projeto esta baixando as dependências e esta acusando 26% da instalação apenas.
 
@@ -97,3 +97,26 @@ Note que o inicio do erro já esta falando "Unsatisfied dependency" aqui já tem
 
 ​	e. caso necessário force o download das dependências utilizando o passo a passo: [clique aqui](https://github.com/jacquelinesantana/Erros-comuns-Java-Spring/blob/main/Manual-erros-java-spring.md#n%C3%A3o-carregou-todos-os-diret%C3%B3rios-do-springboot);
 
+### Erro de no conector do banco de dados, mas executa o projeto
+
+Esse tipo de erro é necessário estar atente para identificar, conforme podemos ver na imagem a seguir o projeto foi "Started", mas ainda assim esta com erro nas linhas acima.
+
+![Erro no driver do banco de dados](https://i.imgur.com/cnYKSAa.png)
+
+Para a correção de tal erro, podemos realizar alguns testes.
+
+1. Verificar se o banco de dados esta acessível no workbench, normalmente esse erro se dá pela falha ou não execução do serviço Mysql no servidor/computador.
+
+2. Verificar se nos serviços do seu sistema operacional o Mysql esta em execução, caso contrário podemos iniciar o serviço, no painel de serviços.
+
+   a. abra o Workbech na sua máquina e tente executar clicando em sua conexão.
+
+   ![workbech conectar com o banco de dados](https://i.imgur.com/hjY1JNx.png)
+
+   b. note que existe a mensagem de "No connection establised" no canto inferir esquerdo da tela, indicando que não tem conexão estabelecida.
+   
+   ![sem conexão estabelecida com banco de dados](https://i.imgur.com/QbdFx3u.png)
+   
+   c. uma solução é avaliarmos os serviços do sistema operacional e verificar se o serviço do MYSQL esta ativo, digite as teclas Windows + R, na caixa do executar digite services.msc e clique em OK, e clique na opção conforme a imagem a seguir:
+   
+   ![serviços do sistema operacional](https://i.imgur.com/ZbFcBBv.png)
