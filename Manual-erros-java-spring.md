@@ -4,7 +4,7 @@ Uma das boas práticas para a pessoa desenvolvedora Java é não se desesperar d
 
 Um outro motivo que me levou a pensar nesse material é que quando mais estivermos familiarizados(as)(es) com a leitura de erros no console, mais fácil será a resolução do mesmo.
 
-Para esse material encontraremos mensagens de erro que podem surgir durante o desenvolvimento de uma api em Java com Spring boot, utilizando conexão com banco de dados e JPA para persistência dos dados.
+Para esse material encontraremos mensagens de erro que podem surgir durante o desenvolvimento de uma api em Java com Spring boot, utilizando conexão com banco de dados, JPA para persistência dos dados e Mysql como banco de dados.
 
 Vale lembrar que você também pode contribuir para esse material se tornar ainda mais rico.
 
@@ -134,3 +134,6 @@ A mensagem de erro a seguir é para o caso de usuário e/ ou senha informados in
    b. salve o arquivo e execute o projeto novamente. Na imagem a seguir temos a informação do local onde o banco esta, no caso na máquina local localhost, destacado em amarelo e as informações de usuário e senha destacadas em vermelho.
 
    ![Arquivo application properties](https://i.imgur.com/BJrHJo8.png)
+   
+   
+
