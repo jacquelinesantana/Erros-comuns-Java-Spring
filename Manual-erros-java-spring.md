@@ -120,3 +120,17 @@ Para a correção de tal erro, podemos realizar alguns testes.
    c. uma solução é avaliarmos os serviços do sistema operacional e verificar se o serviço do MYSQL esta ativo, digite as teclas Windows + R, na caixa do executar digite services.msc e clique em OK, e clique na opção conforme a imagem a seguir:
    
    ![serviços do sistema operacional](https://i.imgur.com/ZbFcBBv.png)
+
+### Erro de Usuário e/ou senha informados incorretamente
+
+A mensagem de erro a seguir é para o caso de usuário e/ ou senha informados incorretamente, note que a mensagem já indica "Access denied for user 'root@localhost' (using password: YES)".
+
+![Imgur](https://i.imgur.com/rf2h2pY.png)
+
+1. A solução aqui é confirmar os dados de usuário e/ou senha do banco de dados.
+
+   a. abra o arquivo application.properties e verifique a digitação dos dados user e password. Vale também confirmar o nome do host.
+
+   b. salve o arquivo e execute o projeto novamente. Na imagem a seguir temos a informação do local onde o banco esta, no caso na máquina local localhost, destacado em amarelo e as informações de usuário e senha destacadas em vermelho.
+
+   ![Arquivo application properties](https://i.imgur.com/BJrHJo8.png)
