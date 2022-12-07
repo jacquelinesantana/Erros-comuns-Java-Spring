@@ -63,6 +63,41 @@ Para forçar o o download das dependências que faltam podemos seguir as seguint
 
 A solução acima também pode ser bem útil quando estamos chamando alguma classe ou método de uma biblioteca que temos certeza, conferindo no pom.xml, que instalamos, mas que ainda assim não funcionam na sua máquina.
 
+## Executar o projeto correto
+
+É importante sempre ao rodar um projeto confirmar se esta executando o projeto correto, já que no dia a dia de uma pessoa desenvolvedora, dependendo da empresa que você vir a trabalhar, podemos estar envolvides em mais de um projeto. Sempre vale apena confirmar o projeto que esta sendo executado no momento.
+
+No console você consegue confirmar o nome do projeto que esta sendo executado, veja a imagem a seguir:
+
+![confirmar a aplicação que esta rodando no servidor no momento](https://i.imgur.com/hshLfWr.png)
+
+Acima temos o nome da aplicação em amarelo no Package Explorer, e podemos notar que é esse mesmo nome que esta no console em execução.
+
+Para evitar erros, você pode executar o projeto de 2(duas) formas:
+
+1. Clicar em executar na barra de ferramentas da IDE e depois clique na seta de seleção de execução de projetos, por ultimo clique no projeto que deseja executar, imagem abaixo. 
+
+   ![selecionar o projeto correto para execução](https://i.imgur.com/HC9zIab.png)
+
+   2. Sim ainda pode ser utilizada a forma de clicar com botão direito sobre o arquivo main() do projeto e executar para executa-lo.
+
+## Ao tentar executar projeto, a porta parece já esta sendo utilizada
+
+Outro problema comum é o console retornar a mensagem dizendo: "Description: Web server failed to start. Port 8080 was already in use.", que indica que a porta que executa a aplicação pela IDE já esta em uso. 
+![Mensagem de erro para a porta do projeto](https://i.imgur.com/44skRIf.png)
+
+1. Uma possível causa e já existir uma aplicação sendo executada na IDE. Para isso vamos apenas parar a aplicação em execução.
+
+1. Outra possível causa, caso tenha instalados novos softwares em sua máquina ou esteja rodando projetos pela primeira vez no seu computador, é de ter outro app utilizando a porta 8080. Para esse caso devemos configurar outra porta para rodar os projetos.
+
+   a. Para confirmar se temos outro projeto, ou o mesmo projeto já estiver em execução verifique o botão Stop esta ativo em cor "vermelha", segue imagem, note que destacamos o botão em amarelo.
+
+   ![projeto em execução na IDE](https://i.imgur.com/CZMQJNP.png)
+
+   b. Para corrigir o projeto, clique nesse botão STOP e execute o seu projeto novamente.
+
+   
+
 ## Erro na dependência Mysql
 
 Alguns erros podem acontecer no momento de fazer uso da dependência de banco de dados Mysql, vamos conhecer alguns erros mais comuns.
