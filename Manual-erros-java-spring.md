@@ -88,13 +88,15 @@ Outro problema comum é o console retornar a mensagem dizendo: "Description: Web
 
 1. Uma possível causa e já existir uma aplicação sendo executada na IDE. Para isso vamos apenas parar a aplicação em execução.
 
-1. Outra possível causa, caso tenha instalados novos softwares em sua máquina ou esteja rodando projetos pela primeira vez no seu computador, é de ter outro app utilizando a porta 8080. Para esse caso devemos configurar outra porta para rodar os projetos.
-
    a. Para confirmar se temos outro projeto, ou o mesmo projeto já estiver em execução verifique o botão Stop esta ativo em cor "vermelha", segue imagem, note que destacamos o botão em amarelo.
 
    ![projeto em execução na IDE](https://i.imgur.com/CZMQJNP.png)
 
    b. Para corrigir o projeto, clique nesse botão STOP e execute o seu projeto novamente.
+
+1. Outra possível causa, caso tenha instalados novos softwares em sua máquina ou esteja rodando projetos pela primeira vez no seu computador, é de ter outro app utilizando a porta 8080. Para esse caso devemos configurar outra porta para rodar os projetos.
+
+   
 
    
 
