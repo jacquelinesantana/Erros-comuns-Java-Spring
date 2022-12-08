@@ -20,11 +20,11 @@ Soluções cabíveis:
 
    a. fechar a janela do Import no [x]; 
 
-   b. clicar com botão direito do mouse sobre o projeto já existente no seu workspace, apontar o cursor do mouse na opção Refactore 
+   b. clicar com botão direito do mouse sobre o projeto já existente no seu workspace, apontar o cursor do mouse na opção **Refactore** 
 
-   c. clicar com botão esquerdo do mouse na opção Rename;
+   c. clicar com botão esquerdo do mouse na opção **Rename**;
 
-   d. digitar o nome nome para o projeto e digitar Enter
+   d. digitar o nome nome para o projeto e digitar **Enter**
 
    ![Trocando nome de um projeto já existente no seu workspace](https://i.imgur.com/44NaD97.png)
    
@@ -51,11 +51,11 @@ Para forçar o o download das dependências que faltam podemos seguir as seguint
 
 ​	b. apontar o cursor do mouse na opção Maven;
 
-​	c. clicar na opção Update Project;
+​	c. clicar na opção Update **Project**;
 
-​	d. na janela seguinte marque as opções: nome do seu projeto e "Force Update of Snapshots/ Releases;
+​	d. na janela seguinte marque as opções: nome do seu projeto e **Force Update of Snapshots/ Releases**;
 
-​	e. clique no botão OK e aguarde o download das dependências;
+​	e. clique no botão **OK** e aguarde o download das dependências;
 
 ![Forçar download das dependências ](https://i.imgur.com/EwkI52p.png)
 
@@ -106,11 +106,13 @@ Alguns erros podem acontecer no momento de fazer uso da dependência de banco de
 
 Lembrando que a leitura do erro deve ser sempre a partir das primeiras linhas de erro, volte a barra de rolagem do console para ter certeza que vai avaliar os erros a partir das primeiras mensagens, já que um erro pode ter efeito cascata trazendo outros erros que na verdade são todos causados pelo primeiro.
 
+```
 Mensagem de erro: Application run failed
 
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+```
 
-Note que o inicio do erro já esta falando "Unsatisfied dependency" aqui já temos um indicativo de que a dependência não foi baixada para o projeto, não esta completa ou não foi instalada. Ainda pode ser que a dependência instalada não condiz com a necessária.
+Note que o inicio do erro já esta falando "**Unsatisfied dependency**" aqui já temos um indicativo de que a dependência não foi baixada para o projeto, não esta completa ou não foi instalada. Ainda pode ser que a dependência instalada não condiz com a necessária.
 
  Para esse erro, foi necessário aplicar a dependência correta ao projeto, nesse caso:
 
@@ -128,7 +130,7 @@ Note que o inicio do erro já esta falando "Unsatisfied dependency" aqui já tem
 
 ​	b. copie o código xml acima;
 
-​	c. cole o código acima entre as tags `<dependencies> </dependencies>` mas sem quebrar nenhuma outra dependência, ATENÇÃO AOS DETALHES;
+​	c. cole o código acima entre as tags `<dependencies> </dependencies>` mas sem quebrar nenhuma outra dependência, **ATENÇÃO AOS DETALHES**;
 
 ​	d. salve o arquivo e aguarde a finalização do download das dependências;
 
@@ -150,13 +152,29 @@ Para a correção de tal erro, podemos realizar alguns testes.
 
    ![workbech conectar com o banco de dados](https://i.imgur.com/hjY1JNx.png)
 
-   b. note que existe a mensagem de "No connection establised" no canto inferir esquerdo da tela, indicando que não tem conexão estabelecida.
+   b. note que existe a mensagem de "**No connection establised**" no canto inferir esquerdo da tela, indicando que não tem conexão estabelecida.
    
    ![sem conexão estabelecida com banco de dados](https://i.imgur.com/QbdFx3u.png)
    
    c. uma solução é avaliarmos os serviços do sistema operacional e verificar se o serviço do MYSQL esta ativo, digite as teclas Windows + R, na caixa do executar digite services.msc e clique em OK, e clique na opção conforme a imagem a seguir:
    
    ![serviços do sistema operacional](https://i.imgur.com/ZbFcBBv.png)
+   
+   d. na janela Serviços, procure o nome Mysql entre os serviços, se na linha do serviço estiver sem  a indicação "**Em execução**" e ainda sem estar com a inicialização automática, conforme a imagem a seguir;
+   
+   ![serviço mysql parado](https://i.imgur.com/oQhI8n9.png)
+   
+   e. clique com botão direito do mouse sobre o serviço MYSQL, vá até a opção propriedades e clique nesta opção.
+   
+   ![ativando o serviço para inicialização automática junto ao sistema operacional](https://i.imgur.com/wmq3fXE.png)
+   
+   f. agora você deve mudar a opção do tipo de inicialização para Automático e clicar no botão **Aplicar** e **OK** 
+   
+   g. depois disso clique novamente com botão direito do mouse no serviço MYSQL e clique na opção **iniciar**
+   
+   ![Imgur](https://i.imgur.com/77Wbp9H.png)
+   
+   h. agora é só executar o projeto novamente na sua IDE.
 
 ### Erro de Usuário e/ou senha informados incorretamente
 
