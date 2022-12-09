@@ -92,7 +92,7 @@ Outro problema comum é o console retornar a mensagem dizendo: "Description: Web
 
    ![projeto em execução na IDE](https://i.imgur.com/CZMQJNP.png)
 
-   b. Para corrigir o projeto, clique nesse botão STOP e execute o seu projeto novamente.
+   b. Para corrigir o projeto, clique nesse botão **STOP** e execute o seu projeto novamente.
 
 1. Outra possível causa, caso tenha instalados novos softwares em sua máquina ou esteja rodando projetos pela primeira vez no seu computador, é de ter outro app utilizando a porta 8080. Para esse caso devemos configurar outra porta para rodar os projetos.
 
@@ -156,7 +156,7 @@ Para a correção de tal erro, podemos realizar alguns testes.
    
    ![sem conexão estabelecida com banco de dados](https://i.imgur.com/QbdFx3u.png)
    
-   c. uma solução é avaliarmos os serviços do sistema operacional e verificar se o serviço do MYSQL esta ativo, digite as teclas Windows + R, na caixa do executar digite services.msc e clique em OK, e clique na opção conforme a imagem a seguir:
+   c. uma solução é avaliarmos os serviços do sistema operacional e verificar se o serviço do MYSQL esta ativo, digite as teclas **Windows + R**, na caixa do executar digite `services.msc` e clique em **OK**, e clique na opção conforme a imagem a seguir:
    
    ![serviços do sistema operacional](https://i.imgur.com/ZbFcBBv.png)
    
@@ -184,7 +184,7 @@ A mensagem de erro a seguir é para o caso de usuário e/ ou senha informados in
 
 1. A solução aqui é confirmar os dados de usuário e/ou senha do banco de dados.
 
-   a. abra o arquivo application.properties e verifique a digitação dos dados user e password. Vale também confirmar o nome do host.
+   a. abra o arquivo **application.properties** e verifique a digitação dos dados `user` e `password`. Vale também confirmar o nome do host.
 
    b. salve o arquivo e execute o projeto novamente. Na imagem a seguir temos a informação do local onde o banco esta, no caso na máquina local localhost, destacado em amarelo e as informações de usuário e senha destacadas em vermelho.
 
